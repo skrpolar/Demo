@@ -1,0 +1,79 @@
+#father{
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+}
+#div1{
+  width: 100px;
+  height: 100px;
+  background-color: rgb(255, 0, 0);
+  order: 1;
+}
+#div2{
+  width: 100px;
+  height: 100px;
+  background-color: rgb(139, 235, 241);
+  order: 2;
+}
+#div3{
+  width: 100px;
+  height: 100px;
+  background-color: rgb(23, 93, 26);
+  order: 3;
+}
+#div4{
+  width: 100px;
+  height: 100px;
+  background-color: rgb(182, 184, 107);
+  order: 4;
+}
+
+/*#div5{
+  width: 100px;
+  height: 100px;
+  background-color: rgb(208, 73, 138);
+  order: 5;
+}
+#div6{
+  width: 100px;
+  height: 100px;
+  background-color: rgb(138, 18, 195);
+  order: 6;
+}
+#div7{
+  width: 100px;
+  height: 100px;
+  background-color: rgb(183, 185, 244);
+  order: 7;
+}
+#div8{
+  width: 100px;
+  height: 100px;
+  background-color: rgb(39, 4, 40);
+  order: 8;
+}*/
+
+@media screen and (min-width : 500px) {
+  #div1,#div2,#div3,#div4{
+    width: 25vw;
+    height: 25vw;
+    max-width: 150px;
+    max-height: 150px;
+  }
+  #father{
+    display: block;
+
+  }
+}
+@media screen and (max-width : 417px) {
+  #father{
+    display: flex;
+    flex-wrap: nowrap;
+
+  }
+  #div1,#div2 ,#div3,#div4{
+    width: 25vw;
+    height: 25vw;
+  }
+
+}
