@@ -8,6 +8,7 @@
 .head{
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100px;
   height: 100px;
   float: left;
@@ -16,6 +17,9 @@
   border-left: none;
   border-top: none;
 }
+.head:hover{
+  text-decoration: underline;
+}
 .head:last-of-type{
   border-right: none;
 }
@@ -23,7 +27,6 @@
   text-align: center;
   width:504px;
   height: 299px;
-  background-color: rgb(203, 202, 232);
   /*border-bottom: 1px solid black;*/
   float: left;
   display: none;
